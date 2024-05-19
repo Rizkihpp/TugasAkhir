@@ -1,0 +1,27 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjgsIm5hbWUiOiJyaXpraSIsImVtYWlsIjoicml6a2lAZ21haWwuY29tIiwiaWF0IjoxNzE0MjEzMjMyLCJleHAiOjE3MTQyMTMyNTJ9.zwNE_f5auAP842v_o3HjR_mzM6o4BXf0xNEQIcE34ak
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "rizki",
+    "email": "rizki@gmail.com",
+    "password": "123456",
+    "confPassword": "123456"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "rizk@gmail.com",
+    "password": "123456"
+}
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout
